@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html style="margin:0;padding:0;">
 
 <head>
@@ -70,8 +70,12 @@ div {
 </style>
 </head>
 
-<body style="margin:0;padding:0;background:linear-gradient(135deg,#f6f8fc,#eef2ff);">
-<amp-auto-ads type="adsense"
+<body style="
+margin:0;
+padding:0;
+background: radial-gradient(circle at top, #f8faff, #eef2ff);
+font-family: 'Inter','Segoe UI',Arial,sans-serif;
+"><amp-auto-ads type="adsense"
         data-ad-client="ca-pub-1701332444334103">
 </amp-auto-ads>
 <!-- ================= HEADER ================= -->
@@ -85,8 +89,24 @@ div {
 </div>
 
 <!-- ================= TREE ROOT ================= -->
-<div id="tree-root" style="width:100%;box-sizing:border-box;padding:10px 14px;"></div>
+<div style="
+max-width: 1100px;
+margin: 0 auto;
+padding: 12px;
+">
 
+  <div id="tree-root" style="
+  width:100%;
+  box-sizing:border-box;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  ">
+  </div>
+
+</div>
 <!-- ================= SCRIPT ================= -->
 <script>
 (function() {
@@ -4660,10 +4680,13 @@ div {
       var hasChildren = node.children && node.children.length > 0;
 
       var toggle = document.createElement('div');
-      toggle.style.width = '20px';
-      toggle.style.height = '20px';
-      toggle.style.borderRadius = '50%';
-      toggle.style.background = hasChildren ? node.color : 'transparent';
+      toggle.style.width = '22px';
+toggle.style.height = '22px';
+toggle.style.borderRadius = '8px';
+toggle.style.fontSize = '12px';
+toggle.style.fontWeight = '700';
+toggle.style.boxShadow = '0 2px 6px rgba(0,0,0,0.15)';
+toggle.style.transition = 'all 0.2s ease';      toggle.style.background = hasChildren ? node.color : 'transparent';
       toggle.style.color = '#fff';
       toggle.style.textAlign = 'center';
       toggle.style.cursor = hasChildren ? 'pointer' : 'default';
@@ -4673,8 +4696,11 @@ div {
       label.style.flex = '1';
       label.style.padding = '6px 10px';
       label.style.borderRadius = '8px';
-      label.style.background = isRoot ? node.color : 'rgba(0,0,0,0.04)';
-      label.textContent = node.name;
+label.style.background = isRoot
+  ? node.color
+  : 'linear-gradient(135deg, rgba(255,255,255,0.9), rgba(240,244,255,0.7))';      label.textContent = node.name;
+  label.style.boxShadow = '0 2px 6px rgba(0,0,0,0.05)';
+label.style.border = '1px solid rgba(0,0,0,0.06)';
 
       row.appendChild(toggle);
       row.appendChild(label);
