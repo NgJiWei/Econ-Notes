@@ -1,0 +1,4815 @@
+﻿<!DOCTYPE html>
+<html style="margin:0;padding:0;">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Knowledge Tree Map</title>
+</head>
+
+<body style="margin:0;padding:0;background:linear-gradient(135deg,#f6f8fc,#eef2ff);">
+
+<!-- ================= HEADER ================= -->
+<div style="padding:16px 18px;">
+  <div style="font-size:18px;font-weight:700;color:#1A1B1C;">
+    📘 Economics Knowledge Tree Map
+  </div>
+  <div style="font-size:12px;color:#6B7280;margin-top:4px;">
+    Click nodes to expand/collapse
+  </div>
+</div>
+
+<!-- ================= TREE ROOT ================= -->
+<div id="tree-root" style="width:100%;box-sizing:border-box;padding:10px 14px;"></div>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+(function() {
+  try {
+
+    var root = document.getElementById('tree-root');
+    if (!root) return;
+
+    /* =====================================================
+       🔥 INSERT ALL YOUR CHAPTERS HERE (ONLY EDIT THIS PART)
+       ===================================================== */
+
+    var treeData = {
+      name: 'Economics',
+      level: 0,
+      expanded: true,
+      color: '#9BBBF4',
+
+      children: [
+
+        /* =======================
+           🔵 CHAPTER 1
+           ======================= */
+		{
+		  "name": "Lecture 1: Introduction to Economics",
+		  "level": 1,
+		  "expanded": true,
+		  "color": "#7b3fe4",
+		  "children": [
+		    {
+		      "name": "Four Types of Economic Resources (Factors of Production)",
+		      "level": 2,
+		      "color": "#b39df3",
+		      "children": [
+		        {
+		          "name": "Land",
+		          "level": 3,
+		          "color": "#dcd4f7",
+		          "children": [
+		            {
+		              "name": "Definition: All natural resources + physical land space for factories/construction",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Subcategories",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "children": [
+		                {
+		                  "name": "Renewable resources: Trees, freshwater",
+		                  "level": 5,
+		                  "color": "#f4f1fc",
+		                  "leaf": true
+		                },
+		                {
+		                  "name": "Non-renewable resources: Petroleum, minerals, crude oil",
+		                  "level": 5,
+		                  "color": "#f4f1fc",
+		                  "leaf": true
+		                }
+		              ]
+		            },
+		            {
+		              "name": "Factor payment to owner: Rent",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Labour",
+		          "level": 3,
+		          "color": "#dcd4f7",
+		          "children": [
+		            {
+		              "name": "Definition: All physical + mental human effort devoted to production activities",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Scope: All production participants (clerks, teachers, factory line workers)",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Determinant of total national labour supply: Total population",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Factor payment to owner: Wages & salaries",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Capital",
+		          "level": 3,
+		          "color": "#dcd4f7",
+		          "children": [
+		            {
+		              "name": "Definition: Man-made manufactured goods used to produce other goods/services (not raw money)",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Examples: Factories, machinery, transport vehicles, plant infrastructure & equipment",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Factor payment to owner: Interest",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Entrepreneur",
+		          "level": 3,
+		          "color": "#dcd4f7",
+		          "children": [
+		            {
+		              "name": "Definition: Special human resource coordinating land, labour, capital together",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Core entrepreneurial functions",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "children": [
+		                {
+		                  "name": "Make strategic business decisions (what to produce + how to produce it)",
+		                  "level": 5,
+		                  "color": "#f4f1fc",
+		                  "leaf": true
+		                },
+		                {
+		                  "name": "Undertake and absorb business risks",
+		                  "level": 5,
+		                  "color": "#f4f1fc",
+		                  "leaf": true
+		                },
+		                {
+		                  "name": "Act as innovator (launch new products, adopt new production technologies)",
+		                  "level": 5,
+		                  "color": "#f4f1fc",
+		                  "leaf": true
+		                }
+		              ]
+		            },
+		            {
+		              "name": "Factor payment to owner: Profit",
+		              "level": 4,
+		              "color": "#ede9fa",
+		              "leaf": true
+		            }
+		          ]
+		        }
+		      ]
+		    },
+		    {
+		      "name": "Fundamental Economic Problem – Scarcity, Choice & Opportunity Cost",
+		      "level": 2,
+		      "color": "#ffb380",
+		      "children": [
+		        {
+		          "name": "Scarcity",
+		          "level": 3,
+		          "color": "#ffddcc",
+		          "children": [
+		            {
+		              "name": "Two root causes of scarcity",
+		              "level": 4,
+		              "color": "#fff0e6",
+		              "children": [
+		                {
+		                  "name": "Unlimited human wants: Desires for goods/services are infinite, cannot be fully satisfied even with high income",
+		                  "level": 5,
+		                  "color": "#fff7f0",
+		                  "leaf": true
+		                },
+		                {
+		                  "name": "Limited scarce resources: Land, labour, capital, entrepreneurship are finite, capping total societal output",
+		                  "level": 5,
+		                  "color": "#fff7f0",
+		                  "leaf": true
+		                }
+		              ]
+		            },
+		            {
+		              "name": "Formal Definition of Economics: Study of how individuals, firms, societies allocate scarce resources efficiently to satisfy unlimited human wants",
+		              "level": 4,
+		              "color": "#fff0e6",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Etymology: Derived from Greek \"oikonomos\", meaning \"household manager\"; households face identical resource trade-offs (time, budget, shared resources)",
+		              "level": 4,
+		              "color": "#fff0e6",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Choice",
+		          "level": 3,
+		          "color": "#ffddcc",
+		          "children": [
+		            {
+		              "name": "Logic: Scarcity creates unavoidable trade-offs; cannot consume all desired goods, must select some goods and sacrifice others",
+		              "level": 4,
+		              "color": "#fff0e6",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Opportunity Cost",
+		          "level": 3,
+		          "color": "#ffddcc",
+		          "children": [
+		            {
+		              "name": "Definition: Value of the single best alternative forgone to obtain a selected good/option",
+		              "level": 4,
+		              "color": "#fff0e6",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Decision rule: All rational economic decisions must explicitly consider opportunity cost",
+		              "level": 4,
+		              "color": "#fff0e6",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Real example: Kobe Bryant skipped college to enter professional basketball; foregone college experience’s opportunity cost = millions of NBA career earnings",
+		              "level": 4,
+		              "color": "#fff0e6",
+		              "leaf": true
+		            }
+		          ]
+		        }
+		      ]
+		    },
+		    {
+		      "name": "Two Branches of Economics – Microeconomics vs Macroeconomics",
+		      "level": 2,
+		      "color": "#80c1ff",
+		      "children": [
+		        {
+		          "name": "Microeconomics",
+		          "level": 3,
+		          "color": "#cce5ff",
+		          "children": [
+		            {
+		              "name": "Focus scope: Individual economic units (households, single firms, isolated specific markets)",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Core research themes: Household/firm individual decision-making; buyer-seller interactions within individual markets",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Application examples: Impact of rent control on local housing market; effect of foreign competition on one specific domestic industry",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Macroeconomics",
+		          "level": 3,
+		          "color": "#cce5ff",
+		          "children": [
+		            {
+		              "name": "Focus scope: Aggregate, economy-wide national/global total economic performance (the entire economy)",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Core research themes: Total national output, unemployment, inflation, government fiscal deficits, national economic growth policy",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Application examples: National unemployment rate trends; federal government budget deficits; national living standard growth strategies",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Practical Distinction Practice",
+		          "level": 3,
+		          "color": "#cce5ff",
+		          "children": [
+		            {
+		              "name": "Micro-level example: Sharply rising local residential housing prices",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Macro-level examples: Government fiscal deficit, national unemployment rate, central bank interest rate adjustments, overall import-export trade balance",
+		              "level": 4,
+		              "color": "#e6f2ff",
+		              "leaf": true
+		            }
+		          ]
+		        }
+		      ]
+		    },
+		    {
+		      "name": "Positive vs Normative Economic Statements",
+		      "level": 2,
+		      "color": "#70d670",
+		      "children": [
+		        {
+		          "name": "Positive Statements (Descriptive Economics)",
+		          "level": 3,
+		          "color": "#c7f0c7",
+		          "children": [
+		            {
+		              "name": "Core purpose: Objectively describe factual reality of how the economy is",
+		              "level": 4,
+		              "color": "#e6f9e6",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Verifiability: Can be proven true or false using real-world data, statistics and empirical evidence",
+		              "level": 4,
+		              "color": "#e6f9e6",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Example: “Minimum-wage legislation causes higher unemployment levels”",
+		              "level": 4,
+		              "color": "#e6f9e6",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Normative Statements (Prescriptive Economics)",
+		          "level": 3,
+		          "color": "#c7f0c7",
+		          "children": [
+		            {
+		              "name": "Core purpose: Argue how the economy should operate; contains subjective personal value judgements",
+		              "level": 4,
+		              "color": "#e6f9e6",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Verifiability: Cannot be confirmed or disproven purely with quantitative data; depends on personal moral & social values",
+		              "level": 4,
+		              "color": "#e6f9e6",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Example: “The government ought to increase the legal minimum wage”",
+		              "level": 4,
+		              "color": "#e6f9e6",
+		              "leaf": true
+		            }
+		          ]
+		        }
+		      ]
+		    },
+		    {
+		      "name": "Production Possibilities Curve (PPC / PPF)",
+		      "level": 2,
+		      "color": "#e6739f",
+		      "children": [
+		        {
+		          "name": "PPC Model Core Assumptions",
+		          "level": 3,
+		          "color": "#f7c6d9",
+		          "children": [
+		            {
+		              "name": "Economy only produces two distinct types of goods",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Total available resources (land, labour, capital, entrepreneur) are fixed in quantity",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Production technology level and quality remain constant",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Full employment condition: All resources are fully and efficiently utilised in production",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "PPC Formal Definition",
+		          "level": 3,
+		          "color": "#f7c6d9",
+		          "children": [
+		            {
+		              "name": "Graphical model illustrating all maximum attainable output combinations of two goods an economy can produce under fixed resources & fixed technology",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Three Economic Concepts Illustrated by PPC",
+		          "level": 3,
+		          "color": "#f7c6d9",
+		          "children": [
+		            {
+		              "name": "Concept 1: Scarcity → Any output combination outside the PPC is unattainable due to resource/technology limits",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Concept 2: Choice → Economy selects only one output mix on the PPC at one time; trade-off between more Good A vs more Good B; all curve points = full productive efficiency",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Concept 3: Opportunity Cost → Increasing production of one good requires reducing output of the other sacrificed good; sacrificed quantity = opportunity cost",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Law of Increasing Opportunity Cost",
+		          "level": 3,
+		          "color": "#f7c6d9",
+		          "children": [
+		            {
+		              "name": "Rule: As production of one good rises, opportunity cost for each additional unit gradually increases",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Root cause: Resources have unequal productivity across industries; shifting specialised resources to alternate production lowers marginal productivity, requiring larger sacrifice of the other good for equal output gains",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Graph characteristic: PPC is concave (curves inward toward origin) to visually reflect this law",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Key Points & Zones on PPC Graph",
+		          "level": 3,
+		          "color": "#f7c6d9",
+		          "children": [
+		            {
+		              "name": "Points ON PPC: Full resource employment + maximum productive economic efficiency",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Points INSIDE PPC: Unemployment / productive inefficiency; idle unused resources; economy can produce more of both goods simultaneously",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Points OUTSIDE PPC: Production unattainable under current resource and technology constraints (scarcity limit)",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "PPC Shifts = Economic Growth / Contraction",
+		          "level": 3,
+		          "color": "#f7c6d9",
+		          "children": [
+		            {
+		              "name": "Outward Right Shift (Economic Growth): Economy can produce more of both goods",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "children": [
+		                {
+		                  "name": "Causes of outward shift",
+		                  "level": 5,
+		                  "color": "#fdf2f7",
+		                  "children": [
+		                    {
+		                      "name": "Discovery or expansion of total resource supply",
+		                      "level": 6,
+		                      "color": "#fef7fa",
+		                      "leaf": true
+		                    },
+		                    {
+		                      "name": "Quality improvement of existing resources",
+		                      "level": 6,
+		                      "color": "#fef7fa",
+		                      "leaf": true
+		                    },
+		                    {
+		                      "name": "Technological innovation & advancement",
+		                      "level": 6,
+		                      "color": "#fef7fa",
+		                      "leaf": true
+		                    },
+		                    {
+		                      "name": "Expansion of working-age population size",
+		                      "level": 6,
+		                      "color": "#fef7fa",
+		                      "leaf": true
+		                    }
+		                  ]
+		                },
+		                {
+		                  "name": "Factors that DO NOT shift PPC: Reducing unemployment (only moves interior points onto curve), tax policy changes, general price level fluctuations, cuts to education spending",
+		                  "level": 5,
+		                  "color": "#fdf2f7",
+		                  "leaf": true
+		                }
+		              ]
+		            },
+		            {
+		              "name": "Inward Left Shift (Economic Contraction): Caused by resource loss, technological decline, natural disasters, labour force shrinkage",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Present vs Future Production Trade-off",
+		          "level": 3,
+		          "color": "#f7c6d9",
+		          "children": [
+		            {
+		              "name": "Prioritising capital goods (future-oriented goods): Drives faster long-run outward PPC expansion",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Prioritising consumer goods (present consumption goods): Small immediate sacrifice, but slower long-term economic growth",
+		              "level": 4,
+		              "color": "#fbe6ef",
+		              "leaf": true
+		            }
+		          ]
+		        }
+		      ]
+		    },
+		    {
+		      "name": "Three Fundamental Economic Questions (All Economic Systems Must Solve)",
+		      "level": 2,
+		      "color": "#cc9966",
+		      "children": [
+		        {
+		          "name": "What to produce?",
+		          "level": 3,
+		          "color": "#e6ccb3",
+		          "children": [
+		            {
+		              "name": "Explanation: Resource scarcity prevents producing every desired good; society chooses output combination (e.g., build new schools or public hospitals); determines final product mix",
+		              "level": 4,
+		              "color": "#f2e6dd",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "How to produce?",
+		          "level": 3,
+		          "color": "#e6ccb3",
+		          "children": [
+		            {
+		              "name": "Explanation: Select production technique type (labour-intensive vs capital-intensive methods); determines resource allocation for manufacturing processes",
+		              "level": 4,
+		              "color": "#f2e6dd",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "For whom to produce?",
+		          "level": 3,
+		          "color": "#e6ccb3",
+		          "children": [
+		            {
+		              "name": "Explanation: Decides distribution of finished goods/services across society, determined by household income levels; higher-income households afford premium, expensive products",
+		              "level": 4,
+		              "color": "#f2e6dd",
+		              "leaf": true
+		            }
+		          ]
+		        }
+		      ]
+		    },
+		    {
+		      "name": "Three Major Economic Systems (Classified by Government Intervention Level)",
+		      "level": 2,
+		      "color": "#9973e6",
+		      "children": [
+		        {
+		          "name": "Command / Centrally Planned Economy",
+		          "level": 3,
+		          "color": "#d9ccf2",
+		          "children": [
+		            {
+		              "name": "Core feature: Central government makes nearly all resource allocation and production decisions",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Central planning covers all three fundamental economic questions",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Advantages: High investment capacity, stable economic growth trajectory, prioritised social welfare objectives, low structural unemployment",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Disadvantages: Information collection bottlenecks, high administrative overhead, weak producer profit incentives, persistent goods shortages or surplus gluts",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Free-Market Economy (Laissez-Faire)",
+		          "level": 3,
+		          "color": "#d9ccf2",
+		          "children": [
+		            {
+		              "name": "Core feature: Minimal government intervention; all economic decisions made autonomously by private households and firms",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Core operating mechanism: Price system as rationing tool; supply & demand regulate price movement; continuous interaction between goods markets and factor markets",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Advantages: Prices transmit consumer/producer information efficiently, no heavy government bureaucratic costs, strong efficiency incentives, market responsiveness to consumer preferences",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Disadvantages: Risk of monopoly power & market concentration, severe income inequality, tendency to ignore environmental harm and broader social externalities",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            }
+		          ]
+		        },
+		        {
+		          "name": "Mixed Economy",
+		          "level": 3,
+		          "color": "#d9ccf2",
+		          "children": [
+		            {
+		              "name": "Core feature: Middle-ground hybrid system between command and free market; private market activity coexists with targeted government regulation",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "leaf": true
+		            },
+		            {
+		              "name": "Government intervention policy tools",
+		              "level": 4,
+		              "color": "#e9e0f7",
+		              "children": [
+		                {
+		                  "name": "Price intervention: Taxes, subsidies, direct legal price ceilings/floors",
+		                  "level": 5,
+		                  "color": "#f1ebfc",
+		                  "leaf": true
+		                },
+		                {
+		                  "name": "Income redistribution: Progressive income taxation, welfare transfer payments",
+		                  "level": 5,
+		                  "color": "#f1ebfc",
+		                  "leaf": true
+		                },
+		                {
+		                  "name": "Regulatory legislation: Rules governing production standards and consumer behaviour",
+		                  "level": 5,
+		                  "color": "#f1ebfc",
+		                  "leaf": true
+		                },
+		                {
+		                  "name": "Macroeconomic stabilisation policies: Counter-cyclical policies to smooth economic boom-bust cycles",
+		                  "level": 5,
+		                  "color": "#f1ebfc",
+		                  "leaf": true
+		                }
+		              ]
+		            }
+		          ]
+		        }
+		      ]
+		    }
+		  ]
+		},
+
+        /* =======================
+           🟢 CHAPTER 2
+           ======================= */
+{
+  "name": "Lecture 2: Demand, Supply and Markets",
+  "level": 1,
+  "expanded": true,
+  "color": "#2b7bba",
+  "children": [
+    {
+      "name": "1. Basic Concept: Competitive Market",
+      "level": 2,
+      "color": "#89b8e2",
+      "children": [
+        {
+          "name": "Definition of a Market",
+          "level": 3,
+          "color": "#c1d8ee",
+          "children": [
+            {
+              "name": "Any arrangement connecting buyers and sellers",
+              "level": 4,
+              "color": "#e0edf8",
+              "leaf": true
+            },
+            {
+              "name": "Forms: Physical stores, online global trading platforms/groups",
+              "level": 4,
+              "color": "#e0edf8",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "Focus: Perfectly Competitive Market",
+          "level": 3,
+          "color": "#c1d8ee",
+          "children": [
+            {
+              "name": "Characteristics: Large number of buyers + large number of sellers",
+              "level": 4,
+              "color": "#e0edf8",
+              "leaf": true
+            },
+            {
+              "name": "Market power: No single buyer/seller can influence or control market price",
+              "level": 4,
+              "color": "#e0edf8",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2. Demand",
+      "level": 2,
+      "color": "#c84242",
+      "children": [
+        {
+          "name": "2.1 Core Definitions",
+          "level": 3,
+          "color": "#f2b2b2",
+          "children": [
+            {
+              "name": "Quantity Demanded",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Amount consumers willing & able to buy at a specific price, within a fixed time period (daily/monthly)",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Demand",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Overall relationship between product price and quantity demanded, ceteris paribus (all other variables constant)",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Demand Schedule",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Tabular table listing quantity demanded corresponding to each possible price",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Demand Curve",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Downward-sloping graphical illustration of price-quantity demanded relationship",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2.2 Law of Demand",
+          "level": 3,
+          "color": "#f2b2b2",
+          "children": [
+            {
+              "name": "Core Rule (Ceteris Paribus): Inverse/negative relationship between price and quantity demanded",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Price ↑ → Quantity Demanded ↓",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Price ↓ → Quantity Demanded ↑",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Two Underlying Explanatory Effects",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Income Effect: Higher price reduces consumer purchasing power, making consumers relatively poorer",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Substitution Effect: Consumers switch to cheaper alternative substitutes when this good’s price rises",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2.3 Two Distinct Types of Demand Changes",
+          "level": 3,
+          "color": "#f2b2b2",
+          "children": [
+            {
+              "name": "(1) Change in Quantity Demanded",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Trigger: Only the good’s own price changes",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Graphical Outcome: Movement along the existing fixed demand curve",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "children": [
+                    {
+                      "name": "Price rise → Move upward along curve",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Price fall → Move downward along curve",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "leaf": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "(2) Change in Demand (Entire Curve Shift)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Trigger: Any variable EXCEPT the good’s own price changes",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Graphical Outcome: Full left/right shift of entire demand curve",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "children": [
+                    {
+                      "name": "Right shift = Demand Increase",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Left shift = Demand Decrease",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "leaf": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Six Demand Shift Determinants",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "children": [
+                    {
+                      "name": "① Prices of Related Goods",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "children": [
+                        {
+                          "name": "Substitutes (e.g. apples & oranges): Substitute Price ↑ → Demand for this good ↑",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        },
+                        {
+                          "name": "Complements (e.g. ice cream & syrup): Complement Price ↑ → Demand for this good ↓",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "② Expected Future Prices",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "children": [
+                        {
+                          "name": "Expect future price hike → Consumers purchase more now → Current demand rises",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "③ Consumer Income",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "children": [
+                        {
+                          "name": "Normal Goods: Income ↑ → Demand ↑",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        },
+                        {
+                          "name": "Inferior Goods: Income ↑ → Demand ↓",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "④ Expected Future Income & Credit Conditions",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "children": [
+                        {
+                          "name": "Optimistic income outlook / easier credit access → Higher demand (durable goods: cars, houses)",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "⑤ Number of Buyers in Market",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "children": [
+                        {
+                          "name": "More buyers enter market → Total market demand increases",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "⑥ Consumer Preferences & Tastes",
+                      "level": 6,
+                      "color": "#fef6f6",
+                      "children": [
+                        {
+                          "name": "New information, new products, trends alter consumer preference, shifting demand",
+                          "level": 7,
+                          "color": "#fffafa",
+                          "leaf": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Supply",
+      "level": 2,
+      "color": "#2b9b59",
+      "children": [
+        {
+          "name": "3.1 Core Definitions",
+          "level": 3,
+          "color": "#a5ddbb",
+          "children": [
+            {
+              "name": "Quantity Supplied",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Amount sellers willing & able to sell at a specific price over a fixed time period",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Supply",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Relationship between product price and quantity supplied, ceteris paribus (all selling-side factors constant)",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Supply Schedule",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Tabular table listing quantity supplied at different price levels",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Supply Curve",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Upward-sloping graph showing price-quantity supplied positive relationship",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3.2 Law of Supply",
+          "level": 3,
+          "color": "#a5ddbb",
+          "children": [
+            {
+              "name": "Core Rule (Ceteris Paribus): Positive/direct relationship between price and quantity supplied",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Price ↑ → Quantity Supplied ↑",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Price ↓ → Quantity Supplied ↓",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3.3 Two Distinct Types of Supply Changes",
+          "level": 3,
+          "color": "#a5ddbb",
+          "children": [
+            {
+              "name": "(1) Change in Quantity Supplied",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Trigger: Only the good’s own price changes",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Graphical Outcome: Movement along existing fixed supply curve",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "Price rise → Move upward along curve",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Price fall → Move downward along curve",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "(2) Change in Supply (Entire Curve Shift)",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Trigger: Any variable EXCEPT the good’s own price changes",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Graphical Outcome: Full left/right shift of entire supply curve",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "Right shift = Supply Increase",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Left shift = Supply Decrease",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Six Supply Shift Determinants",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "① Prices of Related Production Goods",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "children": [
+                        {
+                          "name": "Production Substitutes (trucks & SUVs): Substitute Price ↑ → Supply of this good ↓",
+                          "level": 7,
+                          "color": "#f8fcfb",
+                          "leaf": true
+                        },
+                        {
+                          "name": "Production Complements (milk & cream): Complement Price ↑ → Supply of this good ↑",
+                          "level": 7,
+                          "color": "#f8fcfb",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "② Input / Resource Prices",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "children": [
+                        {
+                          "name": "Raw material cost ↑ → Production cost rises → Firm reduces supply",
+                          "level": 7,
+                          "color": "#f8fcfb",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "③ Expected Future Prices",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "children": [
+                        {
+                          "name": "Expect future price increase → Firms hold inventory → Reduce current supply",
+                          "level": 7,
+                          "color": "#f8fcfb",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "④ Number of Sellers / Firms in Industry",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "children": [
+                        {
+                          "name": "More firms enter market → Total market supply increases",
+                          "level": 7,
+                          "color": "#f8fcfb",
+                          "leaf": true
+                        }
+                      ]
+                    },
+                    {
+                      "name": "⑤ Productivity & Technology",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "children": [
+                        {
+                          "name": "Tech improvement / higher operational efficiency → Lower production cost → Supply ↑",
+                          "level": 7,
+                          "color": "#f8fcfb",
+                          "leaf": true
+                        },
+                        {
+                          "name": "Natural disasters / equipment failure → Lower productivity → Supply ↓",
+                          "level": 7,
+                          "color": "#f8fcfb",
+                          "leaf": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. Market Equilibrium",
+      "level": 2,
+      "color": "#904fc2",
+      "children": [
+        {
+          "name": "4.1 Definition",
+          "level": 3,
+          "color": "#d1b9eb",
+          "children": [
+            {
+              "name": "Equilibrium Condition: Quantity Demanded (Qd) = Quantity Supplied (Qs)",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            },
+            {
+              "name": "Graph location: Intersection point of demand curve and supply curve",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            },
+            {
+              "name": "Equilibrium Price: Market price where Qd matches Qs",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            },
+            {
+              "name": "Equilibrium Quantity: Volume of goods traded at equilibrium price",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "4.2 Law of Market Forces (Automatic Price Self-Adjustment Mechanism)",
+          "level": 3,
+          "color": "#d1b9eb",
+          "children": [
+            {
+              "name": "Surplus (Excess Supply): Qs > Qd",
+              "level": 4,
+              "color": "#e9ddf6",
+              "children": [
+                {
+                  "name": "Sellers cut prices to clear unsold inventory; price falls automatically until surplus eliminated, back to equilibrium",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Shortage (Excess Demand): Qd > Qs",
+              "level": 4,
+              "color": "#e9ddf6",
+              "children": [
+                {
+                  "name": "Buyers compete and bid prices upward; price rises automatically until shortage eliminated, back to equilibrium",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "5. How Demand & Supply Shifts Change Market Equilibrium",
+      "level": 2,
+      "color": "#c28727",
+      "children": [
+        {
+          "name": "Standard 3-Step Analysis Framework for Any Market Shock",
+          "level": 3,
+          "color": "#f2d2a9",
+          "children": [
+            {
+              "name": "Step 1: Identify whether the event impacts demand side or supply side",
+              "level": 4,
+              "color": "#f9e9d9",
+              "leaf": true
+            },
+            {
+              "name": "Step 2: Determine if demand/supply increases (right shift) or decreases (left shift)",
+              "level": 4,
+              "color": "#f9e9d9",
+              "leaf": true
+            },
+            {
+              "name": "Step 3: Compare new equilibrium price & quantity against original equilibrium values",
+              "level": 4,
+              "color": "#f9e9d9",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.1 Only Demand Shifts (Supply Curve Remains Unchanged)",
+          "level": 3,
+          "color": "#f2d2a9",
+          "children": [
+            {
+              "name": "Demand Increase (Right Shift)",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Temporary shortage forms → New Equilibrium: Price ↑, Quantity ↑",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Demand Decrease (Left Shift)",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Temporary surplus forms → New Equilibrium: Price ↓, Quantity ↓",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Rule: Equilibrium price and quantity move in the same direction as demand change",
+              "level": 4,
+              "color": "#f9e9d9",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.2 Only Supply Shifts (Demand Curve Remains Unchanged)",
+          "level": 3,
+          "color": "#f2d2a9",
+          "children": [
+            {
+              "name": "Supply Increase (Right Shift)",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Temporary surplus forms → New Equilibrium: Price ↓, Quantity ↑",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Supply Decrease (Left Shift)",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Temporary shortage forms → New Equilibrium: Price ↑, Quantity ↓",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Rule: Equilibrium price moves opposite to supply change; quantity moves same direction as supply change",
+              "level": 4,
+              "color": "#f9e9d9",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.3 Simultaneous Shift of Both Demand & Supply",
+          "level": 3,
+          "color": "#f2d2a9",
+          "children": [
+            {
+              "name": "Case 1: Demand ↑ + Supply ↑",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Definite outcome: Equilibrium Quantity rises",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                },
+                {
+                  "name": "Uncertain outcome: Equilibrium Price (depends on relative size of two curve shifts)",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Case 2: Demand ↓ + Supply ↓",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Definite outcome: Equilibrium Quantity falls",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                },
+                {
+                  "name": "Uncertain outcome: Equilibrium Price (depends on relative size of two curve shifts)",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Case 3: Demand ↑ + Supply ↓",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Definite outcome: Equilibrium Price rises",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                },
+                {
+                  "name": "Uncertain outcome: Equilibrium Quantity (depends on relative size of two curve shifts)",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Case 4: Demand ↓ + Supply ↑",
+              "level": 4,
+              "color": "#f9e9d9",
+              "children": [
+                {
+                  "name": "Definite outcome: Equilibrium Price falls",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                },
+                {
+                  "name": "Uncertain outcome: Equilibrium Quantity (depends on relative size of two curve shifts)",
+                  "level": 5,
+                  "color": "#fdf4eb",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+
+        /* =======================
+           🟣 CHAPTER 3
+           ======================= */
+{
+  "name": "Lecture 3: Elasticity",
+  "level": 1,
+  "expanded": true,
+  "color": "#5a2d82",
+  "children": [
+    {
+      "name": "1. Core Concept of Elasticity",
+      "level": 2,
+      "color": "#b39ddb",
+      "children": [
+        {
+          "name": "Definition: Measures responsiveness of quantity demanded/supplied to changes in price, income, or related goods’ prices",
+          "level": 3,
+          "color": "#dcd4f0",
+          "leaf": true
+        },
+        {
+          "name": "Purpose: Overcomes limitation of basic demand/supply law (only shows direction of change, not magnitude of change)",
+          "level": 3,
+          "color": "#dcd4f0",
+          "leaf": true
+        }
+      ]
+    },
+    {
+      "name": "2. Price Elasticity of Demand (PED)",
+      "level": 2,
+      "color": "#c95151",
+      "children": [
+        {
+          "name": "2.1 Definition & Formula",
+          "level": 3,
+          "color": "#f2b2b2",
+          "children": [
+            {
+              "name": "Core Formula: PED = %ΔQ_d / %ΔP",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Sign Property: Intrinsically negative (inverse relationship between price and quantity demanded); absolute value used for analysis",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Midpoint (Average) Method",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Function: Eliminates inconsistent elasticity results from different starting/ending points",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Percentage Change Formula: %Δ = [(End − Start) / ((Start + End) ÷ 2)] × 100",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2.2 Five Types of PED (Classified by Absolute Value)",
+          "level": 3,
+          "color": "#f2b2b2",
+          "children": [
+            {
+              "name": "Perfectly Inelastic (PED = 0)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Curve Shape: Vertical demand curve",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Quantity demanded unchanged regardless of price fluctuation",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Example: Essential emergency medicine",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Inelastic (0 < PED < 1)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Curve Shape: Steep demand curve",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Percentage change in quantity < percentage change in price",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Example: Staple food, daily necessities",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Unit Elastic (PED = 1)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Curve Shape: Moderate-slope demand curve",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Percentage change in quantity = percentage change in price",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Elastic (PED > 1)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Curve Shape: Flat demand curve",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Percentage change in quantity > percentage change in price",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Example: Luxury travel, branded goods with many substitutes",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Perfectly Elastic (PED = ∞)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Curve Shape: Horizontal demand curve",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Minimal price increase reduces quantity demanded to zero",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2.3 Determinants of More Elastic Demand",
+          "level": 3,
+          "color": "#f2b2b2",
+          "children": [
+            {
+              "name": "Availability of many close substitute products",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Good accounts for a large proportion of consumer total income",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Classified as luxury goods instead of necessities",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Longer time period for consumers to adjust consumption habits",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Narrow product definition (e.g., one chocolate brand vs. all chocolate products)",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "2.4 Total Revenue (TR = P × Q) Test for PED",
+          "level": 3,
+          "color": "#f2b2b2",
+          "children": [
+            {
+              "name": "Elastic Demand (PED > 1)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Price ↑ → Total Revenue ↓",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Price ↓ → Total Revenue ↑",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Firm Strategy: Cut prices to raise total revenue",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Inelastic Demand (PED < 1)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Price ↑ → Total Revenue ↑",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Price ↓ → Total Revenue ↓",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                },
+                {
+                  "name": "Firm Strategy: Raise prices to raise total revenue",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Unit Elastic Demand (PED = 1)",
+              "level": 4,
+              "color": "#f9dede",
+              "children": [
+                {
+                  "name": "Any price change leaves total revenue unchanged",
+                  "level": 5,
+                  "color": "#fcf0f0",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Special Property of Linear Demand Curve: Fixed slope, variable elasticity (elastic at high price range; inelastic at low price range)",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Other Demand-Related Elasticities",
+      "level": 2,
+      "color": "#34a867",
+      "children": [
+        {
+          "name": "3.1 Cross Elasticity of Demand (XED)",
+          "level": 3,
+          "color": "#a5ddbb",
+          "children": [
+            {
+              "name": "Formula: XED = %ΔQ_d(Good Y) / %ΔP(Good X)",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            },
+            {
+              "name": "Classification by XED Value",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Positive XED = Substitute Goods",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "Logic: Price rise of one good increases demand for the other",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Example: Tea & coffee",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Negative XED = Complementary Goods",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "Logic: Price rise of one good decreases demand for the other",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Example: Cars & tyres",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    }
+                  ]
+                },
+                {
+                  "name": "XED ≈ 0 = Unrelated/Independent Goods",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "Example: Cars & sofas",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Business Application: Predict pricing impact from competitors; coordinate pricing strategy for complementary product bundles",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "3.2 Income Elasticity of Demand (YED)",
+          "level": 3,
+          "color": "#a5ddbb",
+          "children": [
+            {
+              "name": "Formula: YED = %ΔQ_d / %ΔY (Y = consumer income)",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            },
+            {
+              "name": "Positive YED = Normal Goods",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Necessities (0 < YED < 1)",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "Characteristic: Demand grows slower than income growth",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Example: Daily staple food",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Luxuries (YED > 1)",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "children": [
+                    {
+                      "name": "Characteristic: Demand grows faster than income growth",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Example: Overseas holidays",
+                      "level": 6,
+                      "color": "#f3faf6",
+                      "leaf": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Negative YED = Inferior Goods",
+              "level": 4,
+              "color": "#d6efdf",
+              "children": [
+                {
+                  "name": "Characteristic: Higher consumer income leads to lower purchase quantity",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Example: Low-cost generic food",
+                  "level": 5,
+                  "color": "#eaf7ef",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Business Application: Forecast overall market expansion/contraction with household income fluctuations",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. Price Elasticity of Supply (PES)",
+      "level": 2,
+      "color": "#298996",
+      "children": [
+        {
+          "name": "4.1 Definition & Formula",
+          "level": 3,
+          "color": "#a3d4db",
+          "children": [
+            {
+              "name": "Formula: PES = %ΔQ_s / %ΔP",
+              "level": 4,
+              "color": "#d2e9ed",
+              "leaf": true
+            },
+            {
+              "name": "Sign Property: Always positive (law of supply: price and quantity supplied move in same direction)",
+              "level": 4,
+              "color": "#d2e9ed",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "4.2 Five Types of PES",
+          "level": 3,
+          "color": "#a3d4db",
+          "children": [
+            {
+              "name": "Perfectly Inelastic (PES = 0)",
+              "level": 4,
+              "color": "#d2e9ed",
+              "children": [
+                {
+                  "name": "Curve Shape: Vertical supply curve",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Fixed output level regardless of price",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                },
+                {
+                  "name": "Example: Rare antique artwork",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Inelastic (0 < PES < 1)",
+              "level": 4,
+              "color": "#d2e9ed",
+              "children": [
+                {
+                  "name": "Curve Shape: Steep supply curve",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Percentage increase in supplied quantity < percentage price increase",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Unit Elastic (PES = 1)",
+              "level": 4,
+              "color": "#d2e9ed",
+              "children": [
+                {
+                  "name": "Curve Shape: Moderate-slope supply curve",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Percentage change in quantity supplied = percentage price change",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Elastic (PES > 1)",
+              "level": 4,
+              "color": "#d2e9ed",
+              "children": [
+                {
+                  "name": "Curve Shape: Flat supply curve",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Percentage increase in supplied quantity > percentage price increase",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Perfectly Elastic (PES = ∞)",
+              "level": 4,
+              "color": "#d2e9ed",
+              "children": [
+                {
+                  "name": "Curve Shape: Horizontal supply curve",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Producers supply unlimited output at a fixed market price",
+                  "level": 5,
+                  "color": "#e4f3f6",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4.3 Determinants of More Elastic Supply",
+          "level": 3,
+          "color": "#a3d4db",
+          "children": [
+            {
+              "name": "Low marginal extra costs to expand production output",
+              "level": 4,
+              "color": "#d2e9ed",
+              "leaf": true
+            },
+            {
+              "name": "Excess factory production capacity + abundant raw material inventory",
+              "level": 4,
+              "color": "#d2e9ed",
+              "leaf": true
+            },
+            {
+              "name": "Easy substitution/replacement of production input resources",
+              "level": 4,
+              "color": "#d2e9ed",
+              "leaf": true
+            },
+            {
+              "name": "Longer time horizon (firms can build new factories, recruit more labour in long run to scale production)",
+              "level": 4,
+              "color": "#d2e9ed",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+
+        /* =======================
+           🟡 CHAPTER 4
+           ======================= */
+        {
+  "name": "Lecture 4: Costs of Production",
+  "level": 1,
+  "expanded": true,
+  "color": "#6b3fa0",
+  "children": [
+    {
+      "name": "1. Core Cost Foundation: Opportunity Cost",
+      "level": 2,
+      "color": "#b9a3d9",
+      "children": [
+        {
+          "name": "Definition of Opportunity Cost",
+          "level": 3,
+          "color": "#dcd0ed",
+          "children": [
+            {
+              "name": "Root cause: Scarce resources with competing alternative uses",
+              "level": 4,
+              "color": "#ede6f7",
+              "leaf": true
+            },
+            {
+              "name": "True cost = Value of highest-valued forgone alternative",
+              "level": 4,
+              "color": "#ede6f7",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "Two types of Opportunity Cost",
+          "level": 3,
+          "color": "#dcd0ed",
+          "children": [
+            {
+              "name": "1.1 Explicit Costs",
+              "level": 4,
+              "color": "#ede6f7",
+              "children": [
+                {
+                  "name": "Feature: Direct monetary cash payment to external suppliers",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Counted by: Both accountants & economists",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: Wages, rent, raw material fees, transportation cost",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "1.2 Implicit Costs",
+              "level": 4,
+              "color": "#ede6f7",
+              "children": [
+                {
+                  "name": "Feature: No cash payment; cost of self-owned resources",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Counted by: Only economists (ignored by accountants)",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: Foregone salary, forgone interest on own capital, implicit rental income of owned premises, value of owner’s entrepreneurship",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Two Profit Calculations",
+          "level": 3,
+          "color": "#dcd0ed",
+          "children": [
+            {
+              "name": "1.3 Accounting Profit",
+              "level": 4,
+              "color": "#ede6f7",
+              "children": [
+                {
+                  "name": "Formula: Total Revenue − Explicit Costs",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Larger value, only records tangible money expenses",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "1.4 Economic Profit",
+              "level": 4,
+              "color": "#ede6f7",
+              "children": [
+                {
+                  "name": "Formula: Total Revenue − (Explicit Costs + Implicit Costs) = Total Revenue − Economic Costs",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Characteristic: Smaller value, includes all opportunity costs",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Calculation Example (Gomez Pottery)",
+                  "level": 5,
+                  "color": "#f4f0fc",
+                  "children": [
+                    {
+                      "name": "Total Revenue = $72,000",
+                      "level": 6,
+                      "color": "#f8f5fe",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Explicit Costs = $12,000 wage + $5,000 rent + $20,000 materials = $37,000",
+                      "level": 6,
+                      "color": "#f8f5fe",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Implicit Costs = $4,000 forgone interest + $15,000 forgone salary + $3,000 entrepreneur value = $22,000",
+                      "level": 6,
+                      "color": "#f8f5fe",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Accounting Profit = $72,000 − $37,000 = $35,000",
+                      "level": 6,
+                      "color": "#f8f5fe",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Economic Profit = $72,000 − $37,000 − $22,000 = $13,000",
+                      "level": 6,
+                      "color": "#f8f5fe",
+                      "leaf": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2. Production Time Horizons: Short Run vs Long Run",
+      "level": 2,
+      "color": "#4a9678",
+      "children": [
+        {
+          "name": "2.1 Short Run",
+          "level": 3,
+          "color": "#a9d8c5",
+          "children": [
+            {
+              "name": "Rule: At least one factor of production is fixed (capital/machinery/factory)",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            },
+            {
+              "name": "Adjustable input: Only variable inputs (labour, raw materials)",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            },
+            {
+              "name": "Example: Fixed 10 machines; can hire/fire workers, cannot buy new machines",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            },
+            {
+              "name": "Cost feature: Exist both fixed costs + variable costs",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "2.2 Long Run",
+          "level": 3,
+          "color": "#a9d8c5",
+          "children": [
+            {
+              "name": "Rule: All factors of production are fully variable",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            },
+            {
+              "name": "Firm-level flexibility: Adjust factory size, equipment, workforce, all inputs",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            },
+            {
+              "name": "Industry-level feature: New firms enter market; old firms shut down & exit",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            },
+            {
+              "name": "Cost feature: Zero fixed costs; all costs are variable",
+              "level": 4,
+              "color": "#d9ede3",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Short-Run Production Theory & Product Metrics",
+      "level": 2,
+      "color": "#c27a36",
+      "children": [
+        {
+          "name": "3.1 Short-run Production Function",
+          "level": 3,
+          "color": "#f2ccaa",
+          "children": [
+            {
+              "name": "Assumption: Capital (K) fixed; Labour (L) variable",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Formula: Q = F(𝐾̄, L)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "3.2 Three Core Product Measurements",
+          "level": 3,
+          "color": "#f2ccaa",
+          "children": [
+            {
+              "name": "TPP (Total Physical Product / TP)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "Definition: Total output produced with given labour quantity",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "MPP (Marginal Physical Product / MP)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "Definition: Extra output from adding 1 unit of variable labour",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Formula: MPP = ΔTPP / ΔL",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "APP (Average Physical Product / AP)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "Definition: Output per unit of labour input",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Formula: APP = TPP / L",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3.3 Law of Diminishing Marginal Returns (Core Rule)",
+          "level": 3,
+          "color": "#f2ccaa",
+          "children": [
+            {
+              "name": "Definition: Add variable input to fixed input; after threshold, each extra labour unit yields smaller MPP",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Stage 1: Increasing Marginal Returns",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "MPP rises, TPP grows at increasing speed",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Reason: Fixed capital underutilized; workers have enough equipment/space",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Stage 2: Diminishing Marginal Returns (Positive MPP)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "MPP falls, TPP still rises but slower",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Reason: Fixed capital crowded; workers share limited facilities",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Stage 3: Negative Marginal Returns",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "MPP negative, TPP declines",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Reason: Excess labour overcrowds factory, creates inefficiency",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3.4 MPP & APP Relationship",
+          "level": 3,
+          "color": "#f2ccaa",
+          "children": [
+            {
+              "name": "If MPP > APP → APP rises",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "If MPP < APP → APP falls",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "MPP intersects APP at APP’s maximum point",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. Short-Run Production Costs & Cost Curves",
+      "level": 2,
+      "color": "#2e75b5",
+      "children": [
+        {
+          "name": "4.1 Total Cost Components",
+          "level": 3,
+          "color": "#a4c7e6",
+          "children": [
+            {
+              "name": "TFC (Total Fixed Cost)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Feature: Unchanged with output, from fixed inputs",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Curve shape: Horizontal straight line",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "TVC (Total Variable Cost)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Feature: Rises with output, from variable inputs",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Curve shape: Upward sloping, shaped by diminishing returns",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "TC (Total Cost)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Formula: TC = TFC + TVC",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4.2 Average Cost Metrics (Per-unit Cost)",
+          "level": 3,
+          "color": "#a4c7e6",
+          "children": [
+            {
+              "name": "AFC (Average Fixed Cost)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Formula: AFC = TFC / Q",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Feature: Continuous decline as output expands (fixed cost spread over more units)",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "AVC (Average Variable Cost)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Formula: AVC = TVC / Q",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Shape: U-shaped",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Fall phase: Rising MPP improves labour efficiency",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Rise phase: Diminishing MPP causes resource crowding",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "ATC / AC (Average Total Cost)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Formula: ATC = TC / Q = AFC + AVC",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Shape: U-shaped",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Fall at low output: Both AFC & AVC decline",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Rise at high output: Rising AVC offsets falling AFC",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4.3 Marginal Cost (MC)",
+          "level": 3,
+          "color": "#a4c7e6",
+          "children": [
+            {
+              "name": "Definition: Extra total cost to produce one additional unit of output",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            },
+            {
+              "name": "Formula: MC = ΔTC / ΔQ",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            },
+            {
+              "name": "Shape: U-shaped, inverse relationship with MPP",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "4.4 Key MC & ATC Relationship",
+          "level": 3,
+          "color": "#a4c7e6",
+          "children": [
+            {
+              "name": "MC < ATC → ATC falls",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            },
+            {
+              "name": "MC > ATC → ATC rises",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            },
+            {
+              "name": "MC crosses ATC exactly at ATC’s minimum point (productive efficiency)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "5. Long-Run Costs: Scale Effects & LRATC",
+      "level": 2,
+      "color": "#994477",
+      "children": [
+        {
+          "name": "5.1 LRATC (Long-Run Average Total Cost)",
+          "level": 3,
+          "color": "#d9b3cc",
+          "children": [
+            {
+              "name": "Definition: Envelope curve of all short-run ATC curves",
+              "level": 4,
+              "color": "#eed9e4",
+              "leaf": true
+            },
+            {
+              "name": "Meaning: Lowest average cost for each output when all inputs are adjustable",
+              "level": 4,
+              "color": "#eed9e4",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.2 Economies of Scale",
+          "level": 3,
+          "color": "#d9b3cc",
+          "children": [
+            {
+              "name": "Definition: LRATC falls as output increases",
+              "level": 4,
+              "color": "#eed9e4",
+              "leaf": true
+            },
+            {
+              "name": "Root Causes",
+              "level": 4,
+              "color": "#eed9e4",
+              "children": [
+                {
+                  "name": "Labour specialization & division of labour",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Indivisible large machinery (minimum size equipment)",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Container principle (larger containers cut per-unit logistics cost)",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Higher efficiency of large-scale machines",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Valuable production by-products",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "5.3 Constant Returns to Scale",
+          "level": 3,
+          "color": "#d9b3cc",
+          "children": [
+            {
+              "name": "Definition: LRATC remains unchanged as output expands",
+              "level": 4,
+              "color": "#eed9e4",
+              "leaf": true
+            },
+            {
+              "name": "Rule: Doubling all inputs exactly doubles output",
+              "level": 4,
+              "color": "#eed9e4",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.4 Diseconomies of Scale",
+          "level": 3,
+          "color": "#d9b3cc",
+          "children": [
+            {
+              "name": "Definition: LRATC rises as output grows excessively",
+              "level": 4,
+              "color": "#eed9e4",
+              "leaf": true
+            },
+            {
+              "name": "Root Causes",
+              "level": 4,
+              "color": "#eed9e4",
+              "children": [
+                {
+                  "name": "Management coordination failures & complex hierarchies",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Worker alienation, low motivation & shirking",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Deteriorated industrial relations & communication gaps",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                },
+                {
+                  "name": "Interdependent production line delays & complications",
+                  "level": 5,
+                  "color": "#f7e7ef",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6. Chapter Core Summary Takeaways",
+      "level": 2,
+      "color": "#705848",
+      "children": [
+        {
+          "name": "Firm core objective: Maximize profit = Total Revenue − Total Cost",
+          "level": 3,
+          "color": "#c9bcb3",
+          "leaf": true
+        },
+        {
+          "name": "All economic analysis must include full opportunity costs (explicit + implicit)",
+          "level": 3,
+          "color": "#c9bcb3",
+          "leaf": true
+        },
+        {
+          "name": "Accounting profit ignores implicit costs; economic profit reflects true business performance",
+          "level": 3,
+          "color": "#c9bcb3",
+          "leaf": true
+        },
+        {
+          "name": "Short-run production is governed by Law of Diminishing Marginal Product, which shapes all short-run cost curves",
+          "level": 3,
+          "color": "#c9bcb3",
+          "leaf": true
+        },
+        {
+          "name": "Short run: Fixed + variable costs; Long run: All costs variable, flexible production scale",
+          "level": 3,
+          "color": "#c9bcb3",
+          "leaf": true
+        },
+        {
+          "name": "MC curve intersects ATC curve at ATC’s minimum value",
+          "level": 3,
+          "color": "#c9bcb3",
+          "leaf": true
+        },
+        {
+          "name": "LRATC three segments: Economies of scale (fall), Constant returns (flat), Diseconomies of scale (rise)",
+          "level": 3,
+          "color": "#c9bcb3",
+          "leaf": true
+        }
+      ]
+    }
+  ]
+},
+
+        /* =======================
+           🟠 CHAPTER 5
+           ======================= */
+{
+  "name": "Lecture 5: Perfect Competition",
+  "level": 1,
+  "expanded": true,
+  "color": "#3969b1",
+  "children": [
+    {
+      "name": "1. Four Market Structures (Classification Framework)",
+      "level": 2,
+      "color": "#82a6d8",
+      "children": [
+        {
+          "name": "1.1 Classification Criteria (4 dimensions)",
+          "level": 3,
+          "color": "#c2d4ed",
+          "children": [
+            {
+              "name": "Number of firms: many / few / single",
+              "level": 4,
+              "color": "#e1ebf8",
+              "leaf": true
+            },
+            {
+              "name": "Barriers to entry: unrestricted / restricted / blocked",
+              "level": 4,
+              "color": "#e1ebf8",
+              "leaf": true
+            },
+            {
+              "name": "Product characteristic: homogeneous / differentiated / unique",
+              "level": 4,
+              "color": "#e1ebf8",
+              "leaf": true
+            },
+            {
+              "name": "Pricing power: price taker / price maker",
+              "level": 4,
+              "color": "#e1ebf8",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "1.2 4 Market Types Full Comparison",
+          "level": 3,
+          "color": "#c2d4ed",
+          "children": [
+            {
+              "name": "A. Perfect Competition",
+              "level": 4,
+              "color": "#e1ebf8",
+              "children": [
+                {
+                  "name": "Firms: Large quantity",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Entry: Unrestricted free entry & exit",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Product: Homogeneous/identical",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Power: Price taker",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Firm demand curve: Perfectly horizontal",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: Carrots, cabbages, agricultural raw goods",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "B. Monopolistic Competition",
+              "level": 4,
+              "color": "#e1ebf8",
+              "children": [
+                {
+                  "name": "Firms: Many",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Entry: Unrestricted",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Product: Differentiated",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Power: Minor price maker",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Firm demand curve: Downward-sloping, elastic",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: Restaurants, plumbers",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "C. Oligopoly",
+              "level": 4,
+              "color": "#e1ebf8",
+              "children": [
+                {
+                  "name": "Firms: Only a few",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Entry: Restricted high barriers",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Product: Homogeneous or differentiated",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Power: Moderate price control, interdependent firms",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Firm demand curve: Downward-sloping, inelastic",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: Cars, petrol, electrical appliances",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "D. Pure Monopoly",
+              "level": 4,
+              "color": "#e1ebf8",
+              "children": [
+                {
+                  "name": "Firms: One single firm",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Entry: Fully blocked / very high barriers",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Product: Unique, no substitutes",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Power: Full price maker",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Firm demand curve: Steep downward-sloping, highly inelastic",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: Local water supply, patented prescription drugs",
+                  "level": 5,
+                  "color": "#f0f5fc",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1.3 Definition Split",
+          "level": 3,
+          "color": "#c2d4ed",
+          "children": [
+            {
+              "name": "Pure Competition = Perfect Competition",
+              "level": 4,
+              "color": "#e1ebf8",
+              "leaf": true
+            },
+            {
+              "name": "Imperfect Competition: Monopolistic Competition + Oligopoly + Monopoly",
+              "level": 4,
+              "color": "#e1ebf8",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2. Revenue Calculations for Competitive Firms",
+      "level": 2,
+      "color": "#c94444",
+      "children": [
+        {
+          "name": "2.1 Core Formulas",
+          "level": 3,
+          "color": "#f2b3b3",
+          "children": [
+            {
+              "name": "Total Revenue TR = P × Q",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Average Revenue AR = TR / Q = P",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "Marginal Revenue MR = ΔTR / ΔQ = P",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "2.2 Fundamental Identity for Price Takers",
+          "level": 3,
+          "color": "#f2b3b3",
+          "children": [
+            {
+              "name": "P = AR = MR",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "2.3 Practical Example (Amari’s Apple Orchard)",
+          "level": 3,
+          "color": "#f2b3b3",
+          "children": [
+            {
+              "name": "Fixed market price P=$20",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "All output levels have identical AR & MR = $20",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            },
+            {
+              "name": "TR rises linearly as quantity Q increases",
+              "level": 4,
+              "color": "#f9dede",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Profit Maximization Decision Rules",
+      "level": 2,
+      "color": "#2b9958",
+      "children": [
+        {
+          "name": "3.1 Profit Definition",
+          "level": 3,
+          "color": "#a6ddba",
+          "children": [
+            {
+              "name": "Economic Profit π = TR − TC",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "3.2 Method 1: TR-TC Total Curve Approach",
+          "level": 3,
+          "color": "#a6ddba",
+          "children": [
+            {
+              "name": "TR: Linear upward sloping curve",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            },
+            {
+              "name": "TC: Upward curve, accelerates due to diminishing marginal returns",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            },
+            {
+              "name": "Max profit at quantity with largest vertical gap between TR and TC",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "3.3 Method 2: MR = MC Marginal Analysis (Primary Rule)",
+          "level": 3,
+          "color": "#a6ddba",
+          "children": [
+            {
+              "name": "If MR > MC: Increase output to raise profit",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            },
+            {
+              "name": "If MR < MC: Reduce output to raise profit",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            },
+            {
+              "name": "Profit-maximizing Q occurs where MR = MC",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "3.4 Numerical Case (Amari’s Apple Orchard Profit Table)",
+          "level": 3,
+          "color": "#a6ddba",
+          "children": [
+            {
+              "name": "Calculate TR, TC, Profit, MR, MC at each Q",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            },
+            {
+              "name": "Locate Q where MR equals MC for maximum profit",
+              "level": 4,
+              "color": "#d6efdf",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. Short-Run Equilibrium & Production Decisions",
+      "level": 2,
+      "color": "#9950b8",
+      "children": [
+        {
+          "name": "4.1 Short-Run Core Assumption",
+          "level": 3,
+          "color": "#d2b9eb",
+          "children": [
+            {
+              "name": "Fixed number of industry firms (no entry/exit)",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            },
+            {
+              "name": "Fixed Costs (FC) exist, must be paid even if shut down",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            },
+            {
+              "name": "Variable Costs (VC) only incurred when producing output",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "4.2 Industry vs Individual Firm Graph Relationship",
+          "level": 3,
+          "color": "#d2b9eb",
+          "children": [
+            {
+              "name": "Industry: Market D & S intersect to set equilibrium Pe",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            },
+            {
+              "name": "Single firm: Horizontal demand curve fixed at Pe (D=P=AR=MR)",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "4.3 Two Short-Run Profit/Loss Outcomes",
+          "level": 3,
+          "color": "#d2b9eb",
+          "children": [
+            {
+              "name": "4.3.1 Supernormal Economic Profit (P > ATC)",
+              "level": 4,
+              "color": "#e9ddf6",
+              "children": [
+                {
+                  "name": "Profit per unit = P − ATC",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                },
+                {
+                  "name": "Total Profit = (P − ATC) × Qmax",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "4.3.2 Economic Loss (P < ATC)",
+              "level": 4,
+              "color": "#e9ddf6",
+              "children": [
+                {
+                  "name": "Loss per unit = ATC − P",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                },
+                {
+                  "name": "Total Loss = (ATC − P) × Qmax",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4.4 Short-Run Shut-Down Decision",
+          "level": 3,
+          "color": "#d2b9eb",
+          "children": [
+            {
+              "name": "4.4.1 Outcome of Shutting Down: TR=0, only pay fixed costs",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            },
+            {
+              "name": "4.4.2 Produce condition: TR > VC → P > AVC",
+              "level": 4,
+              "color": "#e9ddf6",
+              "children": [
+                {
+                  "name": "Loss smaller than total fixed cost",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "4.4.3 Shut down condition: TR < VC → P < AVC",
+              "level": 4,
+              "color": "#e9ddf6",
+              "children": [
+                {
+                  "name": "Loss larger than total fixed cost; better to stop production",
+                  "level": 5,
+                  "color": "#f3ecfb",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "4.4.4 Shut-down point: Minimum point on AVC curve",
+              "level": 4,
+              "color": "#e9ddf6",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "5. Long-Run Equilibrium & Market Adjustment",
+      "level": 2,
+      "color": "#b47036",
+      "children": [
+        {
+          "name": "5.1 Long-Run Core Assumption",
+          "level": 3,
+          "color": "#f2cca9",
+          "children": [
+            {
+              "name": "All inputs variable; no permanent fixed costs",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Complete free entry and exit of firms",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.2 Adjustment 1: Short-Run Positive Economic Profit",
+          "level": 3,
+          "color": "#f2cca9",
+          "children": [
+            {
+              "name": "Step 1: P > ATC, existing firms earn supernormal profit",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 2: Profit attracts new firms to enter the industry",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 3: Market supply curve shifts right, total market output rises",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 4: Equilibrium market price falls",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 5: Price falls until P = min ATC, economic profit = 0",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.3 Adjustment 2: Short-Run Economic Loss",
+          "level": 3,
+          "color": "#f2cca9",
+          "children": [
+            {
+              "name": "Step 1: P < ATC, firms suffer losses",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 2: Loss pushes inefficient firms to exit the market",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 3: Market supply curve shifts left, total market output falls",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 4: Equilibrium market price rises",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Step 5: Price rises until P = min ATC, economic loss = 0",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.4 Final Long-Run Equilibrium Condition",
+          "level": 3,
+          "color": "#f2cca9",
+          "children": [
+            {
+              "name": "P = MR = MC = minimum ATC (Zero economic profit)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "5.5 Why Firms Stay in Business with Zero Economic Profit",
+          "level": 3,
+          "color": "#f2cca9",
+          "children": [
+            {
+              "name": "TC includes implicit opportunity costs (owner time, capital return)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            },
+            {
+              "name": "Zero economic profit = positive accounting profit (covers all costs & opportunity costs)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "6. Two Types of Efficiency in Long-Run Perfect Competition",
+      "level": 2,
+      "color": "#7a4892",
+      "children": [
+        {
+          "name": "6.1 Productive Efficiency (P = minimum ATC)",
+          "level": 3,
+          "color": "#d4bede",
+          "children": [
+            {
+              "name": "Definition: Produce goods at the lowest possible average total cost",
+              "level": 4,
+              "color": "#e9dff2",
+              "leaf": true
+            },
+            {
+              "name": "Driving force: Free entry/exit forces cost minimization",
+              "level": 4,
+              "color": "#e9dff2",
+              "leaf": true
+            },
+            {
+              "name": "Benefit: Consumers pay the lowest sustainable price",
+              "level": 4,
+              "color": "#e9dff2",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "6.2 Allocative Efficiency (P = MC)",
+          "level": 3,
+          "color": "#d4bede",
+          "children": [
+            {
+              "name": "Definition: Resources allocated to produce goods society values most",
+              "level": 4,
+              "color": "#e9dff2",
+              "leaf": true
+            },
+            {
+              "name": "Logic",
+              "level": 4,
+              "color": "#e9dff2",
+              "children": [
+                {
+                  "name": "P = Marginal Benefit (MB, consumer willingness to pay)",
+                  "level": 5,
+                  "color": "#f2eaf7",
+                  "leaf": true
+                },
+                {
+                  "name": "MC = Marginal Opportunity Cost of production",
+                  "level": 5,
+                  "color": "#f2eaf7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Outcome: MB=MC, no deadweight loss, maximized social welfare",
+              "level": 4,
+              "color": "#e9dff2",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "7. Chapter Core Summary Key Takeaways",
+      "level": 2,
+      "color": "#635047",
+      "children": [
+        {
+          "name": "Competitive firms are price takers: P = AR = MR",
+          "level": 3,
+          "color": "#c8beb9",
+          "leaf": true
+        },
+        {
+          "name": "Universal profit maximization rule: MR = MC",
+          "level": 3,
+          "color": "#c8beb9",
+          "leaf": true
+        },
+        {
+          "name": "Short-run rules:",
+          "level": 3,
+          "color": "#c8beb9",
+          "children": [
+            {
+              "name": "Operate if P > AVC; shut down if P < AVC",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            },
+            {
+              "name": "Fixed costs are sunk, irrelevant to short-run output choices",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "Long-run rules:",
+          "level": 3,
+          "color": "#c8beb9",
+          "children": [
+            {
+              "name": "Free entry/exit eliminates all economic profit/loss",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            },
+            {
+              "name": "Long-run equilibrium profit = 0",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            },
+            {
+              "name": "Productive efficiency: P = min ATC",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            },
+            {
+              "name": "Allocative efficiency: P = MC",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "Long-run permanent exit rule: Exit industry if P < ATC",
+          "level": 3,
+          "color": "#c8beb9",
+          "leaf": true
+        },
+        {
+          "name": "Demand shift difference across time horizons",
+          "level": 3,
+          "color": "#c8beb9",
+          "children": [
+            {
+              "name": "Short run: Demand up → price up + profit; Demand down → price down + loss",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            },
+            {
+              "name": "Long run: Firm entry/exit adjusts supply, price returns to min ATC, zero profit restored",
+              "level": 4,
+              "color": "#e0d9d4",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+
+        /* =======================
+           🔴 CHAPTER 6
+           ======================= */
+{
+  "name": "Lecture 6: Monopoly and Imperfect Competition",
+  "level": 1,
+  "expanded": true,
+  "color": "#722f9e",
+  "children": [
+    {
+      "name": "1. Pure Monopoly",
+      "level": 2,
+      "color": "#b994d9",
+      "children": [
+        {
+          "name": "1.1 Definition & Core Characteristics",
+          "level": 3,
+          "color": "#ddcff0",
+          "children": [
+            {
+              "name": "Single seller of product with no close substitutes",
+              "level": 4,
+              "color": "#eee6f8",
+              "leaf": true
+            },
+            {
+              "name": "Possess market power: price maker",
+              "level": 4,
+              "color": "#eee6f8",
+              "leaf": true
+            },
+            {
+              "name": "Face full market downward-sloping demand curve",
+              "level": 4,
+              "color": "#eee6f8",
+              "leaf": true
+            },
+            {
+              "name": "Protected by barriers to entry; can earn long-run economic profit",
+              "level": 4,
+              "color": "#eee6f8",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "1.2 Three Barriers to Entry (Root Causes of Monopoly)",
+          "level": 3,
+          "color": "#ddcff0",
+          "children": [
+            {
+              "name": "A. Natural Monopoly (Economies of Scale Barrier)",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Feature: High fixed cost, low marginal cost; continuous falling ATC",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Logic: One firm supplies whole market at lower ATC than multiple split firms",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: Local electricity, water supply, public transit",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "B. Exclusive Ownership of Essential Key Resources",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Feature: One firm controls scarce production input",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Examples: De Beers diamond mines, sole town freshwater source",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Limitation: Rare in real markets due to resource substitutes",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "C. Government Legal Monopolies",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Forms: Patents (inventions/drugs), Copyrights (artistic works)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Cost: Higher market prices & monopoly profits",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Benefit: Incentivize innovation, R&D and creative production",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1.3 Revenue Comparison: Monopoly vs Perfect Competition",
+          "level": 3,
+          "color": "#ddcff0",
+          "children": [
+            {
+              "name": "Universal Revenue Formulas (All Market Structures)",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "TR = P × Q",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "AR = TR / Q = P (AR always equals price)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "MR = ΔTR / ΔQ (Change in total revenue per extra unit)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Perfectly Competitive Firm",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Horizontal perfectly elastic demand curve",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "MR = AR = P (No price cut needed to sell more output)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Monopolist Revenue Rules",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Two offsetting effects of raising output Q",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "children": [
+                    {
+                      "name": "Output effect: More units sold → raise TR",
+                      "level": 6,
+                      "color": "#faf6fe",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Price effect: Cut price for all units → reduce TR",
+                      "level": 6,
+                      "color": "#faf6fe",
+                      "leaf": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Core property: MR < P always",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Negative MR: Price effect > Output effect (TR falls when Q rises)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Case Example: JJ’s Hair Salon Calculation Logic",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Calculate TR = P × Q for each quantity level",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "AR always matches price P",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "MR = Current TR − Previous TR (can be negative)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1.4 Monopoly Profit Maximization Mechanism",
+          "level": 3,
+          "color": "#ddcff0",
+          "children": [
+            {
+              "name": "Step 1: Determine profit-max output quantity",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Universal rule: Produce Q where MR = MC",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Step 2: Set selling price",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Locate profit-max Q on market demand curve to get maximum consumer willingness-to-pay price",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Equilibrium condition: P > MR = MC",
+              "level": 4,
+              "color": "#eee6f8",
+              "leaf": true
+            },
+            {
+              "name": "Profit Calculation Formula",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Profit = (P − ATC) × Q",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Long-run profit/loss outcomes",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "P > ATC: Persistent positive economic profit (barriers block new entrants)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "P < ATC: Economic loss → short-run shut down / long-run market exit",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1.5 Welfare & Social Costs of Monopoly",
+          "level": 3,
+          "color": "#ddcff0",
+          "children": [
+            {
+              "name": "Benchmark: Perfect Competition Efficient Equilibrium",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Equilibrium at P = MC, output = Qc (efficient quantity)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Maximize total surplus = Consumer Surplus + Producer Surplus",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Allocative efficiency: P = MC",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Productive efficiency: Produce at minimum ATC",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Monopoly Inefficient Equilibrium",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Equilibrium at Pm > MR = MC, output = Qm < Qc (underproduction)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Allocative inefficiency: Buyer’s marginal value (P) > marginal production cost (MC)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Deadweight Loss (Core social cost)",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "children": [
+                    {
+                      "name": "Permanent lost total surplus from restricted output",
+                      "level": 6,
+                      "color": "#faf6fe",
+                      "leaf": true
+                    }
+                  ]
+                },
+                {
+                  "name": "Surplus redistribution",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "children": [
+                    {
+                      "name": "Consumer surplus shrinks (higher price, lower quantity)",
+                      "level": 6,
+                      "color": "#faf6fe",
+                      "leaf": true
+                    },
+                    {
+                      "name": "Part of consumer surplus transferred to monopolist as extra producer surplus",
+                      "level": 6,
+                      "color": "#faf6fe",
+                      "leaf": true
+                    },
+                    {
+                      "name": "DWL is wasted surplus captured by no market participant",
+                      "level": 6,
+                      "color": "#faf6fe",
+                      "leaf": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Key Misconception Clarification",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Monopoly profit itself is only surplus transfer, not a social welfare loss; DWL is the real social cost",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1.6 Potential Social Advantages of Monopolies",
+          "level": 3,
+          "color": "#ddcff0",
+          "children": [
+            {
+              "name": "Economies of Scale (Natural Monopoly Strength)",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Large single firm lowers ATC via large plants, centralized management",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Avoid duplicated infrastructure costs; split market raises overall industry costs",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Sufficient Capital for R&D & Technology Innovation",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Long-run economic profit funds research and new technology",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Caveat: Protected monopolies may lack innovation incentives without competitive pressure",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Strong Incentives for New Product Development",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Perfect competition: New products quickly copied, economic profit eliminated",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                },
+                {
+                  "name": "Patent/copyright monopolies secure long-term profit rewards for original products",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Corporate Takeover Competition Discipline",
+              "level": 4,
+              "color": "#eee6f8",
+              "children": [
+                {
+                  "name": "Inefficient monopolies face takeover threats; forced to cut costs and operate efficiently",
+                  "level": 5,
+                  "color": "#f6f0fc",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2. Imperfect Competition Overview",
+      "level": 2,
+      "color": "#47a092",
+      "children": [
+        {
+          "name": "Market Structure Continuum",
+          "level": 3,
+          "color": "#b3ddd6",
+          "children": [
+            {
+              "name": "Perfect Competition → Monopolistic Competition → Oligopoly → Pure Monopoly",
+              "level": 4,
+              "color": "#d9ede9",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "Shared feature of imperfect competition firms",
+          "level": 3,
+          "color": "#b3ddd6",
+          "children": [
+            {
+              "name": "Partial market power (price maker)",
+              "level": 4,
+              "color": "#d9ede9",
+              "leaf": true
+            },
+            {
+              "name": "Downward-sloping individual firm demand curve",
+              "level": 4,
+              "color": "#d9ede9",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3. Monopolistic Competition",
+      "level": 2,
+      "color": "#c48537",
+      "children": [
+        {
+          "name": "3.1 Definition",
+          "level": 3,
+          "color": "#f2d0aa",
+          "children": [
+            {
+              "name": "Many small independent sellers producing differentiated similar products (blend monopoly + perfect competition traits)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "3.2 Core Characteristics",
+          "level": 3,
+          "color": "#f2d0aa",
+          "children": [
+            {
+              "name": "Large number of small sellers",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "Tiny individual market share",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "No collusion possible",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Independent price & output decisions",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Differentiated products (source of weak market power)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "Differentiation sources: product features, service, location, branding, packaging",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Downward-sloping but relatively elastic demand curve",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "Price maker, but many close substitutes exist",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Firms use advertising to build customer brand loyalty",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Free entry & exit (low barriers)",
+              "level": 4,
+              "color": "#f9e6d7",
+              "children": [
+                {
+                  "name": "Low capital startup costs",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                },
+                {
+                  "name": "Minor barriers: advertising investment, trademark & brand construction",
+                  "level": 5,
+                  "color": "#fdf1e7",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3.3 Real Industry Examples",
+          "level": 3,
+          "color": "#f2d0aa",
+          "children": [
+            {
+              "name": "Restaurants, sports apparel, bookstores, consumer electronics, coffee shops",
+              "level": 4,
+              "color": "#f9e6d7",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "4. Oligopoly",
+      "level": 2,
+      "color": "#2d5b99",
+      "children": [
+        {
+          "name": "4.1 Definition",
+          "level": 3,
+          "color": "#a3bede",
+          "children": [
+            {
+              "name": "Market dominated by a small number of large interdependent firms with substantial market power",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "4.2 Core Characteristics",
+          "level": 3,
+          "color": "#a3bede",
+          "children": [
+            {
+              "name": "Few large dominant producers",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Formed via monopoly breakup or merger of small competitors",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Two product types",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Homogeneous oligopoly: raw materials (oil, steel)",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Differentiated oligopoly: auto manufacturing, airlines, banking (heavy non-price advertising competition)",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Mutual interdependence (defining feature)",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Each firm’s profit depends on own strategy + rival firms’ strategic responses",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Significant barriers to entry",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Economies of scale",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Control of critical production resources",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "Predatory retaliatory pricing",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                },
+                {
+                  "name": "High brand advertising costs",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4.3 Oligopoly Strategic Behaviour",
+          "level": 3,
+          "color": "#a3bede",
+          "children": [
+            {
+              "name": "Collusive Oligopoly",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Firms cooperate, act jointly as a monopoly to restrict output, raise prices and maximize total industry profit",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Non-collusive Oligopoly",
+              "level": 4,
+              "color": "#d1e2f2",
+              "children": [
+                {
+                  "name": "Firms cheat on collusive agreements, compete aggressively; total industry profit falls",
+                  "level": 5,
+                  "color": "#e6f0fa",
+                  "leaf": true
+                }
+              ]
+            },
+            {
+              "name": "Strategic conflict: Collusion yields higher joint profit, but individual self-interest encourages cheating",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            }
+          ]
+        },
+        {
+          "name": "4.4 Real Industry Examples",
+          "level": 3,
+          "color": "#a3bede",
+          "children": [
+            {
+              "name": "Aircraft manufacturing, car production, commercial banking, global oil production",
+              "level": 4,
+              "color": "#d1e2f2",
+              "leaf": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+      ]
+    };
+
+    /* =====================================================
+       🧠 TREE RENDER ENGINE (DO NOT TOUCH)
+       ===================================================== */
+
+    function createNode(node, isRoot) {
+
+      var container = document.createElement('div');
+      container.style.width = '100%';
+
+      var row = document.createElement('div');
+      row.style.display = 'flex';
+      row.style.gap = '8px';
+      row.style.alignItems = 'flex-start';
+
+      var hasChildren = node.children && node.children.length > 0;
+
+      var toggle = document.createElement('div');
+      toggle.style.width = '20px';
+      toggle.style.height = '20px';
+      toggle.style.borderRadius = '50%';
+      toggle.style.background = hasChildren ? node.color : 'transparent';
+      toggle.style.color = '#fff';
+      toggle.style.textAlign = 'center';
+      toggle.style.cursor = hasChildren ? 'pointer' : 'default';
+      toggle.textContent = hasChildren ? (node.expanded ? '−' : '+') : '•';
+
+      var label = document.createElement('div');
+      label.style.flex = '1';
+      label.style.padding = '6px 10px';
+      label.style.borderRadius = '8px';
+      label.style.background = isRoot ? node.color : 'rgba(0,0,0,0.04)';
+      label.textContent = node.name;
+
+      row.appendChild(toggle);
+      row.appendChild(label);
+      container.appendChild(row);
+
+      var childrenBox = document.createElement('div');
+      childrenBox.style.marginLeft = '24px';
+      childrenBox.style.borderLeft = '1px dashed #ccc';
+      childrenBox.style.paddingLeft = '10px';
+      childrenBox.style.display = node.expanded ? 'block' : 'none';
+
+      if (hasChildren) {
+        node.children.forEach(child => {
+          childrenBox.appendChild(createNode(child, false));
+        });
+      }
+
+      if (hasChildren) container.appendChild(childrenBox);
+
+      function toggleNode() {
+        node.expanded = !node.expanded;
+        childrenBox.style.display = node.expanded ? 'block' : 'none';
+        toggle.textContent = node.expanded ? '−' : '+';
+      }
+
+      if (hasChildren) {
+        toggle.onclick = toggleNode;
+        label.onclick = toggleNode;
+      }
+
+      return container;
+    }
+
+    root.appendChild(createNode(treeData, true));
+
+  } catch (e) {
+    document.getElementById('tree-root').innerHTML =
+      '<div style="padding:10px;color:#6B7280;">Error loading tree</div>';
+  }
+})();
+</script>
+
+</body>
+</html>
